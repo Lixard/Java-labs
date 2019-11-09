@@ -1,3 +1,5 @@
+package lab3_4;
+
 import java.io.File;
 import java.io.IOException;
 
@@ -18,7 +20,7 @@ public final class CreateFile {
      * @return  true/false
      * @throws IOException the error occurs when the program can't perform actions with file(access denied, file missing, etc)
      */
-    public static boolean fileCreation(String fileName) throws IOException {
+    private static boolean fileCreation(String fileName) throws IOException {
         File file = new File(fileName);
         return file.createNewFile();
     }

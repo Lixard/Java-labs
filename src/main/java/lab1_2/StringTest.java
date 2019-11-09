@@ -1,3 +1,5 @@
+package lab1_2;
+
 public final class StringTest {
     public static void main(String[] args) {
         String str = "d";

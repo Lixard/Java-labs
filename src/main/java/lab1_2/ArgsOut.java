@@ -1,3 +1,5 @@
+package lab1_2;
+
 import java.util.Arrays;
 
 public final class ArgsOut {

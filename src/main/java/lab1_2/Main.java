@@ -1,3 +1,5 @@
+package lab1_2;
+
 public final class Main {
     public static void main(String[] args) {
         Circle circle = new Circle();

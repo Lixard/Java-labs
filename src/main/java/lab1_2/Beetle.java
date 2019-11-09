@@ -1,3 +1,5 @@
+package lab1_2;
+
 public class Beetle extends Insect {
     int k = prt("Beetle.k initialized");
     Beetle() {

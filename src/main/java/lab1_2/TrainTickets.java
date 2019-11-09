@@ -1,3 +1,5 @@
+package lab1_2;
+
 public final class TrainTickets {
     public static void main(String[] args) {
         int luckyTickets = 0;

@@ -3,3 +3,5 @@ gradlew.bat
 /.idea/
 /.gradle/
 /gradle/
+/build/
+/out/
