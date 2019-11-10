@@ -12,18 +12,18 @@ public final class RandomAccessFileUse {
 
         RandomAccessFile accessFile = new RandomAccessFile(file, "rw");
         ArrayList<String> list = new ArrayList<>();
-        String str = "";
+        String str = accessFile.readLine();
         String substr = "russia";
         while (str != null) {
-            str = accessFile.readLine();
             list.add(str);
+            str = accessFile.readLine();
         }
         accessFile.seek(0);
         for (int i = 0; i < list.size(); i++) {
-            if (list.get(i).contains(substr)) {
-                list.set(i, list.get(i).replaceAll(substr, "RUSSIA"));
-            }
+            list.set(i, list.get(i).replaceAll(substr, "RUSSIA"));
             accessFile.writeBytes(list.get(i));
+            accessFile.writeBytes(System.lineSeparator());
         }
+        accessFile.close();
     }
 }
