@@ -1,17 +1,17 @@
-package lab5.firstTask;
+package lab5.task2_3;
 
-public final class Rectangle extends Figure {
+final class Rectangle implements IFigure {
 
     private final double length;
     private final double width;
 
-    public Rectangle(double length, double width) {
+    Rectangle(double length, double width) {
         this.length = length;
         this.width = width;
     }
 
     @Override
-    double areaCount() {
+    public double getArea() {
         return length * width;
     }
 }

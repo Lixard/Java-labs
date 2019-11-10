@@ -1,4 +1,4 @@
-package lab5.firstTask;
+package lab5.task1;
 
 import org.jetbrains.annotations.NotNull;
 
