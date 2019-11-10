@@ -3,7 +3,7 @@ package lab5.task2_3;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Main {
+public final class Main {
     public static void main(String[] args) {
         Client client = new Client();
 
