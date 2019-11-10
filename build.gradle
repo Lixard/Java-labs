@@ -19,4 +19,5 @@ repositories {
 }
 
 dependencies {
+    compile group: 'org.jetbrains', name: 'annotations', version: '18.0.0'
 }
