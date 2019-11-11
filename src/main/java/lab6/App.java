@@ -1,7 +1,7 @@
 package lab6;
 
-
-public class Main {
+//параметр запуска для javadoc: "-encoding UTF-8 -docencoding UTF-8 -charset UTF-8"
+public class App {
     public static void main(String[] args) {
         ThreadDate threadDate = new ThreadDate();
         System.out.println("ThreadDate started!");
