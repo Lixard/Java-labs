@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id "org.flywaydb.flyway" version "6.0.8"
 }
 
 group 'StudentLabs'
@@ -12,12 +13,20 @@ tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
 
-sourceCompatibility = 1.8
+flyway {
+    url = 'jdbc:mysql://127.0.0.1:3306/lab78?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC'
+    user = 'root'
+    password = '12345'
+}
+
+sourceCompatibility = 1.12
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
+    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.18'
+    compile group: 'org.flywaydb', name: 'flyway-core', version: '6.0.8'
     compile group: 'org.jetbrains', name: 'annotations', version: '18.0.0'
 }
