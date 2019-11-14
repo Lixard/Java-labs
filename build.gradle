@@ -14,9 +14,9 @@ tasks.withType(JavaCompile) {
 }
 
 flyway {
-    url = 'jdbc:mysql://127.0.0.1:3306/lab78?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC'
-    user = 'root'
-    password = '12345'
+    url = 'jdbc:postgresql://127.0.0.1:5432/vus'
+    user = 'postgres'
+    password = '123'
 }
 
 sourceCompatibility = 1.12
@@ -26,7 +26,7 @@ repositories {
 }
 
 dependencies {
-    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.18'
+    compile group: 'org.postgresql', name: 'postgresql', version: '42.2.8'
     compile group: 'org.flywaydb', name: 'flyway-core', version: '6.0.8'
     compile group: 'org.jetbrains', name: 'annotations', version: '18.0.0'
 }
