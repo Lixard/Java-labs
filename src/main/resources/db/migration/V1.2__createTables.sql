@@ -1,5 +1,5 @@
 CREATE TABLE "vuss" (
-	"id" serial NOT NULL,
+	"id" integer NOT NULL,
 	"name" varchar(50),
 	"adress" varchar(100),
 	CONSTRAINT "vuss_pk" PRIMARY KEY ("id")
@@ -10,7 +10,7 @@ CREATE TABLE "vuss" (
 
 
 CREATE TABLE "sotr" (
-	"id" serial NOT NULL,
+	"id" integer NOT NULL,
 	"idvuss" integer,
 	"name" varchar(50),
 	"fone" varchar(10),
@@ -22,7 +22,7 @@ CREATE TABLE "sotr" (
 
 
 CREATE TABLE "spec" (
-	"id" serial NOT NULL,
+	"id" integer NOT NULL,
 	"idvuss" integer,
 	"name" varchar(50),
 	"info" varchar(100),
