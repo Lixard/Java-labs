@@ -63,8 +63,11 @@ final class CreateFilesWithDate {
                 String str = scanner.nextLine();
                 scanner.close();
                 writer.write(str + " - " + file.getName());
-                writer.write(System.lineSeparator());
+            } else {
+                writer.write("Not Found - " + file.getName());
             }
+            writer.write(System.lineSeparator());
+
         }
         writer.close();
     }
